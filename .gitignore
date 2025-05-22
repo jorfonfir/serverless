@@ -22,6 +22,7 @@ tfplan
 *.bak
 *.log
 *.tmp
+*.lock.hcl
 
 # Archivos del sistema
 .DS_Store
