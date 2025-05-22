@@ -188,7 +188,7 @@ resource "aws_codebuild_project" "wordpress_image_build" {
 
   source {
     type      = "GITHUB"
-    location  = "https://github.com/jorfonfir/proyecto-fargate.git"
+    location  = "https://github.com/jorfonfir/serverless.git"
     buildspec = "buildspec.yml" 
   }
 }
@@ -216,7 +216,7 @@ resource "aws_codepipeline" "wordpress_pipeline" {
 
       configuration = {
         Owner      = "jorfonfir"
-        Repo       = "proyecto-fargate"
+        Repo       = "serverless"
         Branch     = "main"
         OAuthToken = var.github_oauth_token
       }
