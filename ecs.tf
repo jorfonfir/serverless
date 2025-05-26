@@ -139,7 +139,7 @@ resource "aws_cloudwatch_log_group" "wordpress" {
 
 # crear recurso AWS Secrets
 resource "aws_secretsmanager_secret" "db_password" {
-  name = "wordpress-db-password"
+  name = "wordpress-db-password2"
 }
 
 resource "aws_secretsmanager_secret_version" "db_password_version" {
